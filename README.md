@@ -16,6 +16,6 @@
 ### 📁 **Table of Contents**
 1. [Robot-Framework-Projects](https://github.com/Michal-Kielczewski/qa-portfolio/tree/main/Robot-Framework)
 1. [API-Postman-Projects](https://github.com/Michal-Kielczewski/qa-portfolio/tree/main/Postman)
-1. [API-Postman-Projects-Bug-Reports](https://github.com/Michal-Kielczewski/qa-portfolio/blob/main/Postman/First-Postman-API-automated-test/Gorest%20newman-reporter.zip)
+1. [Robot-Framework-and-API-Tests-Raports](https://github.com/Michal-Kielczewski/qa-portfolio/tree/main/Tests-reports)
 1. [Git-Verion-Control](https://github.com/Michal-Kielczewski/qa-portfolio/blob/main/Verion-Control/VC-documentatnion.md)
 1. [Learning-Robot-E2E-Testing](https://github.com/Michal-Kielczewski/qa-portfolio/tree/main/Learning-Robot-Framework-SeleniumLibrary-RequestsLibrary)
