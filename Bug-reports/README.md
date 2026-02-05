@@ -1,4 +1,4 @@
-## **Tests Result preview:**
+## **Robot Framework Tests Result:**
 
 [First_web_smoke_tests_project](https://michal-kielczewski.github.io/qa-portfolio/Robot-Framework/First_web_smoke_test_project/Results/log.html)
 
