@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.2 on win32)" generated="2026-01-19T15:36:22.746157" rpa="false" schemaversion="5">
+<suite id="s1" name="Demoqa.Com" source="C:\Users\Michał\Desktop\GIT\Learning-Robot-Framework-SeleniumLibrary+RequestsLibrary\Tests\demoqa.com.robot">
+<test id="s1-t1" name="Should be able to navigate to the &quot;Home&quot; page" line="15">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:22.938493" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-19T15:36:22.938324" elapsed="1.119550"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-19T15:36:24.058232" elapsed="0.025700"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:22.937834" elapsed="1.146241"/>
+</kw>
+<kw name="Navigate to &quot;Home&quot; page" owner="demoqa.comApp">
+<kw name="Go to the &quot;Home&quot; page" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:24.085188" level="INFO">Opening url 'https://demoqa.com/'</msg>
+<arg>${HomePageURL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-19T15:36:24.085067" elapsed="2.053713"/>
+</kw>
+<arg>${HomePageURL}</arg>
+<status status="PASS" start="2026-01-19T15:36:24.084809" elapsed="2.054084"/>
+</kw>
+<kw name="Verify &quot;Home&quot; Page Loaded" owner="HomePage">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:26.152440" level="INFO">Element 'xpath=//*[@id="app"]/header/a/img' is displayed.</msg>
+<arg>${ToolsQaImage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-19T15:36:26.139268" elapsed="0.013255"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:26.139058" elapsed="0.013550"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:24.084483" elapsed="2.068177"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-01-19T15:36:26.153317" elapsed="2.114324"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:26.153059" elapsed="2.114740"/>
+</kw>
+<doc>This test should open the browser with the demoqa page.</doc>
+<tag>0001</tag>
+<tag>HomePage</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2026-01-19T15:36:22.937156" elapsed="5.330811"/>
+</test>
+<test id="s1-t2" name="First exercise in &quot;Elements&quot;" line="20">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:28.269307" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-19T15:36:28.269122" elapsed="1.092936"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-19T15:36:29.362258" elapsed="0.027857"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:28.268905" elapsed="1.121324"/>
+</kw>
+<kw name="Navigate to &quot;Home&quot; page" owner="demoqa.comApp">
+<kw name="Go to the &quot;Home&quot; page" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:29.391427" level="INFO">Opening url 'https://demoqa.com/'</msg>
+<arg>${HomePageURL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-19T15:36:29.391257" elapsed="1.922860"/>
+</kw>
+<arg>${HomePageURL}</arg>
+<status status="PASS" start="2026-01-19T15:36:29.390977" elapsed="1.923261"/>
+</kw>
+<kw name="Verify &quot;Home&quot; Page Loaded" owner="HomePage">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.327606" level="INFO">Element 'xpath=//*[@id="app"]/header/a/img' is displayed.</msg>
+<arg>${ToolsQaImage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.314772" elapsed="0.012912"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.314460" elapsed="0.013303"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:29.390617" elapsed="1.937195"/>
+</kw>
+<kw name="Navigate to demoqa.com/elements page" owner="demoqa.comApp">
+<kw name="navigate to the &quot;Elements&quot; page" owner="HomePage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.328694" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/div[2]/div/div[1]'.</msg>
+<arg>${Category"Elements"}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.328548" elapsed="0.071047"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.328377" elapsed="0.071340"/>
+</kw>
+<kw name="Verify &quot;Elements&quot; Page Loaded" owner="ElementsPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Please select an item from left to start practice.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.400158" elapsed="0.007487"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${SidebarMenu}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.407781" elapsed="0.006762"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.399908" elapsed="0.014721"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.328116" elapsed="0.086565"/>
+</kw>
+<kw name="Open &quot;Text Box&quot; section and fill &quot;Text Box&quot; form and submit" owner="demoqa.comApp">
+<kw name="Click on &quot;Text Box&quot; section" owner="ElementsPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.415618" level="INFO">Clicking element 'xpath=//*[@id="item-0"]'.</msg>
+<arg>${TextBoxSection}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.415449" elapsed="0.049362"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.415260" elapsed="0.049683"/>
+</kw>
+<kw name="Verify &quot;Text Box&quot; section opened" owner="ElementsPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Text Box</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.465400" elapsed="0.011203"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.465135" elapsed="0.011605"/>
+</kw>
+<kw name="Fill &quot;Text Box&quot; form and submit" owner="ElementsPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.477389" level="INFO">Typing text 'John' into text field 'xpath=//*[@id="userName"]'.</msg>
+<arg>xpath=//*[@id="userName"]</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.477210" elapsed="0.065879"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.543575" level="INFO">Typing text 'john@example.com' into text field 'xpath=//*[@id="userEmail"]'.</msg>
+<arg>xpath=//*[@id="userEmail"]</arg>
+<arg>john@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.543319" elapsed="0.066621"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.610507" level="INFO">Typing text '123 Main St, Anytown, USA' into text field 'xpath=//*[@id="currentAddress"]'.</msg>
+<arg>xpath=//*[@id="currentAddress"]</arg>
+<arg>123 Main St, Anytown, USA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.610196" elapsed="0.058133"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.668827" level="INFO">Typing text '456 Elm St, Othertown, USA' into text field 'xpath=//*[@id="permanentAddress"]'.</msg>
+<arg>xpath=//*[@id="permanentAddress"]</arg>
+<arg>456 Elm St, Othertown, USA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.668545" elapsed="0.077968"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:31.747283" level="INFO">Clicking 'id=submit' using an action chain.</msg>
+<arg>id=submit</arg>
+<arg>action_chain=True #scroll down to the button and click CTA 5 times</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.747050" elapsed="0.295081"/>
+</kw>
+<arg>5s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>id=submit</arg>
+<arg>action_chain=True #scroll down to the button and click CTA 5 times</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-01-19T15:36:31.746749" elapsed="0.295485"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.476960" elapsed="0.565346"/>
+</kw>
+<kw name="Verify &quot;Text Box&quot; form submission" owner="ElementsPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${TextBoxOutput}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:32.042728" elapsed="0.007416"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:32.042475" elapsed="0.007783"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:31.414986" elapsed="0.635342"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-01-19T15:36:32.051022" elapsed="2.122012"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:32.050747" elapsed="2.122408"/>
+</kw>
+<doc>This test should navigate to the "Text Box" component and validate its content.</doc>
+<tag>0002</tag>
+<tag>Exercise</tag>
+<status status="PASS" start="2026-01-19T15:36:28.268451" elapsed="5.904874"/>
+</test>
+<test id="s1-t3" name="Secound exercise in &quot;Elements&quot;" line="27">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:34.174545" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-19T15:36:34.174399" elapsed="1.061510"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-19T15:36:35.236103" elapsed="0.029482"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:34.174190" elapsed="1.091496"/>
+</kw>
+<kw name="Navigate to &quot;Home&quot; page" owner="demoqa.comApp">
+<kw name="Go to the &quot;Home&quot; page" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:35.266784" level="INFO">Opening url 'https://demoqa.com/'</msg>
+<arg>${HomePageURL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-19T15:36:35.266654" elapsed="2.000399"/>
+</kw>
+<arg>${HomePageURL}</arg>
+<status status="PASS" start="2026-01-19T15:36:35.266392" elapsed="2.000841"/>
+</kw>
+<kw name="Verify &quot;Home&quot; Page Loaded" owner="HomePage">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:37.281117" level="INFO">Element 'xpath=//*[@id="app"]/header/a/img' is displayed.</msg>
+<arg>${ToolsQaImage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.267895" elapsed="0.013309"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.267521" elapsed="0.013771"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:35.266069" elapsed="2.015274"/>
+</kw>
+<kw name="Navigate to demoqa.com/elements page" owner="demoqa.comApp">
+<kw name="navigate to the &quot;Elements&quot; page" owner="HomePage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:37.282311" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/div[2]/div/div[1]'.</msg>
+<arg>${Category"Elements"}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.282128" elapsed="0.076754"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.281930" elapsed="0.077071"/>
+</kw>
+<kw name="Verify &quot;Elements&quot; Page Loaded" owner="ElementsPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Please select an item from left to start practice.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.359437" elapsed="0.007573"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${SidebarMenu}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.367142" elapsed="0.006217"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.359194" elapsed="0.014241"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.281667" elapsed="0.091821"/>
+</kw>
+<kw name="Open &quot;Check Box&quot; section and check all checkboxes exept &quot;Download&quot; folder" owner="demoqa.comApp">
+<kw name="Click on &quot;Check Box&quot; section" owner="CheckboxPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:37.374444" level="INFO">Clicking element 'xpath=//*[@id="item-1"]'.</msg>
+<arg>${CheckBoxSection}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.374270" elapsed="0.055330"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.374085" elapsed="0.055629"/>
+</kw>
+<kw name="Verify &quot;Check Box&quot; section opened" owner="CheckboxPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Check Box</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.430133" elapsed="0.007716"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.429895" elapsed="0.008062"/>
+</kw>
+<kw name="Check all checkboxes exept &quot;Download&quot; folder" owner="CheckboxPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:37.438549" level="INFO">Clicking element 'xpath=//*[@id="tree-node"]/div/button[1]'.</msg>
+<arg>${ExpandButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.438374" elapsed="0.048198"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:37.487235" level="INFO">Clicking element 'xpath=//*[@id="tree-node"]/ol/li/span/label/span[1]'.</msg>
+<arg>${HomeCheckBox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.486905" elapsed="0.044397"/>
+</kw>
+<kw name="Hide Ads" owner="CheckboxPage">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:37.532140" level="INFO">Executing JavaScript:
+var ads = document.querySelectorAll('iframe, [id*="ad"], [class*="ad"]');ads.forEach(function(ad) { ad.style.display = 'none'; });
+Without any arguments.</msg>
+<arg>var ads = document.querySelectorAll('iframe, [id*="ad"], [class*="ad"]');</arg>
+<arg>ads.forEach(function(ad) { ad.style.display = 'none'; });</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.531779" elapsed="0.003929"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.531518" elapsed="0.004400"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${MostBottomElementOnPage}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.536025" elapsed="0.271232"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-19T15:36:38.807880" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-19T15:36:37.807420" elapsed="1.000576"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DownloadCheckBox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-19T15:36:38.808175" elapsed="0.012609"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-19T15:36:38.821077" level="INFO">Clicking element 'xpath=//*[@id="tree-node"]/ol/li/ol/li[3]/span/label'.</msg>
+<arg>${DownloadCheckBox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-19T15:36:38.820910" elapsed="0.033274"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.438146" elapsed="1.416161"/>
+</kw>
+<kw name="Verify selected checkboxes" owner="CheckboxPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${CheckBoxOutput}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-19T15:36:38.854756" elapsed="0.006704"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-19T15:36:38.861716" level="INFO">You have selected :desktopnotescommandsdocumentsworkspacereactangularveuofficepublicprivateclassifiedgeneral</msg>
+<arg>${CheckBoxOutput}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-19T15:36:38.861587" elapsed="0.000173"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:38.854538" elapsed="0.007281"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:37.373794" elapsed="1.488070"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-01-19T15:36:38.862424" elapsed="2.106796"/>
+</kw>
+<status status="PASS" start="2026-01-19T15:36:38.862191" elapsed="2.107155"/>
+</kw>
+<doc>This test should navigate to the "Check Box" component and validate its content.</doc>
+<tag>0003</tag>
+<tag>current</tag>
+<tag>Exercise</tag>
+<status status="PASS" start="2026-01-19T15:36:34.173789" elapsed="6.795710"/>
+</test>
+<doc>This file contains the test cases for the https://demoqa.com/ page.</doc>
+<status status="PASS" start="2026-01-19T15:36:22.747247" elapsed="18.222814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">0001</stat>
+<stat pass="1" fail="0" skip="0">0002</stat>
+<stat pass="1" fail="0" skip="0">0003</stat>
+<stat pass="1" fail="0" skip="0">current</stat>
+<stat pass="2" fail="0" skip="0">Exercise</stat>
+<stat pass="1" fail="0" skip="0">HomePage</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="Demoqa.Com" id="s1" pass="3" fail="0" skip="0">Demoqa.Com</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

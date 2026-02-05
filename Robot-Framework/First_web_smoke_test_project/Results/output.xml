@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.2 on win32)" generated="2025-07-16T17:46:22.746596" rpa="false" schemaversion="5">
+<suite id="s1" name="FrontOffice" source="C:\Users\Michał\Desktop\GIT\Robot Framework\First_web_scraping\Tests\FrontOffice.robot">
+<test id="s1-t1" name="Should be able to navigate to the &quot;Home&quot; page" line="15">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:22.932907" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-16T17:46:22.932707" elapsed="1.127690"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-16T17:46:24.060645" elapsed="0.030028"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:22.932130" elapsed="1.158680"/>
+</kw>
+<kw name="Navigate to &quot;Home&quot; page" owner="FrontOfficeApp">
+<kw name="Go to the &quot;Home&quot; page" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:24.091911" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<arg>${HomePageURL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-07-16T17:46:24.091791" elapsed="12.148576"/>
+</kw>
+<arg>${HomePageURL}</arg>
+<status status="PASS" start="2025-07-16T17:46:24.091537" elapsed="12.148950"/>
+</kw>
+<kw name="Verify &quot;Home&quot; Page Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${"Home"PageHeader}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-07-16T17:46:36.240888" elapsed="0.009322"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:36.240658" elapsed="0.009645"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:24.091189" elapsed="12.159172"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-07-16T17:46:36.251001" elapsed="2.103862"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:36.250723" elapsed="2.104255"/>
+</kw>
+<doc>This test should open the browser with the front office page and check if the text is present.</doc>
+<tag>0001</tag>
+<tag>HomePage</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2025-07-16T17:46:22.931376" elapsed="15.423776"/>
+</test>
+<test id="s1-t2" name="Should be able to navigate to the &quot;Team&quot; component on the &quot;Home&quot; page" line="20">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:38.356285" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-16T17:46:38.356135" elapsed="1.040936"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-16T17:46:39.397257" elapsed="0.027426"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:38.355949" elapsed="1.068843"/>
+</kw>
+<kw name="Navigate to &quot;Home&quot; page" owner="FrontOfficeApp">
+<kw name="Go to the &quot;Home&quot; page" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:39.425864" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<arg>${HomePageURL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-07-16T17:46:39.425733" elapsed="2.115201"/>
+</kw>
+<arg>${HomePageURL}</arg>
+<status status="PASS" start="2025-07-16T17:46:39.425471" elapsed="2.115559"/>
+</kw>
+<kw name="Verify &quot;Home&quot; Page Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${"Home"PageHeader}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-07-16T17:46:41.541388" elapsed="0.007678"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:41.541189" elapsed="0.007953"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:39.425161" elapsed="2.124030"/>
+</kw>
+<kw name="Navigate to &quot;Team&quot; Component" owner="FrontOfficeApp">
+<kw name="Select &quot;Team&quot; CTA" owner="TopNav">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:41.550166" level="INFO">Clicking element 'xpath=//*[@id="bs-example-navbar-collapse-1"]/ul/li[5]/a'.</msg>
+<arg>${TopNav"Team"CTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-16T17:46:41.549891" elapsed="0.039147"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:41.549711" elapsed="0.039435"/>
+</kw>
+<kw name="Verify &quot;Team&quot; Component Loaded" owner="HomePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${"Team"Component}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-16T17:46:41.589575" elapsed="0.012535"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:41.589342" elapsed="0.012858"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:41.549448" elapsed="0.052804"/>
+</kw>
+<kw name="Validate &quot;Team&quot; Component Content" owner="FrontOfficeApp">
+<kw name="Validate &quot;Team&quot; Component H2 text" owner="HomePage">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:41.603283" level="INFO">Verifying element 'CSS=#team &gt; div &gt; div:nth-child(1) &gt; div &gt; h2' contains exact text 'Our Amazing Team'.</msg>
+<arg>${"Team"ComponentLabel}</arg>
+<arg>Our Amazing Team</arg>
+<arg>ignore_case= ${True}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-07-16T17:46:41.603030" elapsed="0.013814"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:41.602836" elapsed="0.014114"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:41.602527" elapsed="0.014476"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-07-16T17:46:41.617536" elapsed="2.099888"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:41.617306" elapsed="2.100231"/>
+</kw>
+<doc>This test should navigate to the "Team" section and verify its presence.</doc>
+<tag>0002</tag>
+<tag>HomePage</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2025-07-16T17:46:38.355547" elapsed="5.362166"/>
+</test>
+<test id="s1-t3" name="Should be able to navigate to the &quot;Contact&quot; component and send a message through the Contact form." line="27">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:43.718948" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-16T17:46:43.718807" elapsed="1.057356"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-16T17:46:44.776351" elapsed="0.030753"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:43.718612" elapsed="1.088617"/>
+</kw>
+<kw name="Navigate to &quot;Home&quot; page" owner="FrontOfficeApp">
+<kw name="Go to the &quot;Home&quot; page" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:44.808339" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<arg>${HomePageURL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-07-16T17:46:44.808207" elapsed="2.279916"/>
+</kw>
+<arg>${HomePageURL}</arg>
+<status status="PASS" start="2025-07-16T17:46:44.807909" elapsed="2.280306"/>
+</kw>
+<kw name="Verify &quot;Home&quot; Page Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${"Home"PageHeader}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.088560" elapsed="0.007707"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:47.088366" elapsed="0.007976"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:44.807579" elapsed="2.288811"/>
+</kw>
+<kw name="Navigate to &quot;Contact&quot; Component" owner="FrontOfficeApp">
+<kw name="Select &quot;Contact&quot; CTA" owner="TopNav">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:47.097255" level="INFO">Clicking element 'xpath=//*[@id="bs-example-navbar-collapse-1"]/ul/li[6]/a'.</msg>
+<arg>${TopNav"Contact"CTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.097090" elapsed="0.040101"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:47.096913" elapsed="0.040376"/>
+</kw>
+<kw name="Verify &quot;Contact&quot; Component Loaded" owner="HomePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${"Contact"Component}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.137702" elapsed="0.011567"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:47.137479" elapsed="0.011874"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:47.096638" elapsed="0.052766"/>
+</kw>
+<kw name="Send a message using the Contact form" owner="FrontOfficeApp">
+<kw name="Send Message by Contact Form" owner="HomePage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:47.150179" level="INFO">Typing text 'John Doe' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.150036" elapsed="0.074027"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:47.224524" level="INFO">Typing text 'example@exa.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>example@exa.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.224271" elapsed="0.060331"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:47.284967" level="INFO">Typing text '123456789' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.284772" elapsed="0.053503"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:47.338761" level="INFO">Typing text 'This is a sample message.' into text field 'id=message'.</msg>
+<arg>id=message</arg>
+<arg>This is a sample message.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.338495" elapsed="0.084249"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-16T17:46:47.423205" level="INFO">Clicking button 'xpath=//*[@id="contactForm"]/div/div[4]/button'.</msg>
+<arg>${"SendMessage"Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.422952" elapsed="0.058007"/>
+</kw>
+<doc>This keyword fills out the contact form and submits it.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.149884" elapsed="0.331197"/>
+</kw>
+<kw name="Verify Contact Form Submission" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${"ContactFormSubmissionMessage"}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.481690" elapsed="0.417071"/>
+</kw>
+<doc>This keyword verifies that the contact form submission was successful.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.481347" elapsed="0.417516"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:47.149643" elapsed="0.749274"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-07-16T17:46:47.899545" elapsed="2.120441"/>
+</kw>
+<status status="PASS" start="2025-07-16T17:46:47.899294" elapsed="2.120804"/>
+</kw>
+<doc>This test should navigate to the "Contact" section and send a message.</doc>
+<tag>0003</tag>
+<tag>HomePage</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2025-07-16T17:46:43.718238" elapsed="6.302015"/>
+</test>
+<doc>This file contains the test cases for the front office page.</doc>
+<status status="PASS" start="2025-07-16T17:46:22.747587" elapsed="27.273256"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">0001</stat>
+<stat pass="1" fail="0" skip="0">0002</stat>
+<stat pass="1" fail="0" skip="0">0003</stat>
+<stat pass="3" fail="0" skip="0">HomePage</stat>
+<stat pass="3" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="FrontOffice" id="s1" pass="3" fail="0" skip="0">FrontOffice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
