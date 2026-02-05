@@ -6,4 +6,4 @@
 
 [Login_validation_tests](https://michal-kielczewski.github.io/qa-portfolio/Robot-Framework/Login_validation_tests/Results/log.html)
 
-## **To see API Tests Result please go to folder "Gorest newman-reporter.zip"
+## To see API Tests Result please go to folder "Gorest newman-reporter.zip"
